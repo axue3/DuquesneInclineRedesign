@@ -1,0 +1,98 @@
+.gift-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0.5rem 0 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gift-item {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.gift-item h2 {
+    margin-bottom: 1rem;
+}
+
+/* Existing styles remain */
+.gift-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2.5rem;
+    color: #0b1834;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.gift-caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+    .gift-image {
+        max-width: 300px;
+    }
+    
+    .gift-item {
+        padding: 1rem;
+    }
+}
+.gift-container {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+.gift-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2.5rem;
+    color: #0b1834;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.gift-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.gift-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.gift-item h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.8rem;
+    color: #0b1834;
+    margin: 0 0 0.5rem;
+}
+
+.gift-caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .gift-title {
+        font-size: 2rem;
+    }
+    
+    .gift-item h2 {
+        font-size: 1.5rem;
+    }
+    
+    .gift-caption {
+        font-size: 1rem;
+    }
+}

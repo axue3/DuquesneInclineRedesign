@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Mailing List - Duquesne Incline</title>
+    <link rel="stylesheet" href="../static/mailing.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="activities.html">Tours & Activities</a></li>
+                <li><a href="gift.html">Museum & Gift Shop</a></li>
+                <li><a href="mailing.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mailing-container">
+        <div class="form-column">
+            <h1>Join Our Mailing List</h1>
+            <p class="subheading">Receive the latest news and updates</p>
+
+            <form id="mailingForm" onsubmit="validateMailingForm(event)">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">Zip Code </label>
+                    <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="sms" name="sms">
+                    <label for="sms">Receive SMS updates</label>
+                </div>
+
+                <button type="submit">Subscribe</button>
+                <div id="errorMessages"></div>
+            </form>
+        </div>
+
+        <div class="map-column">
+            <div class="contact-section">
+                <div class="contact-text">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <p><strong>Address:</strong><br>
+                        1197 West Carson Street<br>
+                        Pittsburgh, PA 15219</p>
+                        
+                        <p><strong>Phone:</strong><br>
+                        (412)-381-1665</p>
+
+                        <p><strong>Fax:</strong><br>
+                        (412)-381-1943</p>
+                        
+                        <p><strong>Email:</strong><br>
+                            <a href="mailto:duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a>
+                        </p>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="contact-image">
+                    <img src="../images/logo.png" alt="Duquesne Incline Entrance">
+                </div>
+            </div>
+        
+            <div class="map-container">
+                <h2>Find Us</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.234647422546!2d-80.0202886846033!3d40.43920717936269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af9e7d1e97%3A0x6d110f3e7d79e1a6!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1623256789012!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2025 Duquesne Incline. All rights reserved.</p>
+    </footer>
+
+    <script src="../static/mailing.js"></script>
+</body>
+</html>

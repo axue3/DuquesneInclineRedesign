@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Full-width navigation bar without gaps */
+.top-nav {
+  background: #0b1834;
+  padding: 15px 0;
+  width: 100vw;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 3;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.top-nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Full-bleed carousel */
+.hero-carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+  flex-shrink: 0;
+}
+
+/* Hero text styling matching screenshot */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  font-family: 'Instrument Serif', serif;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.hero-text p {
+  font-size: 2.2rem;
+  margin: 1rem 0 0 0;
+  font-weight: 300;
+  line-height: 1.3;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Content section styling */
+.content {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  background: #0b1834;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.read-more {
+  background-color: #0b1834; /* Navy blue from your nav */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+
+.read-more:hover {
+  background-color: #1a2d4f; /* Darker navy */
+  transform: translateY(-2px);
+}
+
+.read-more.active {
+  background-color: #2a4365; /* Active state color */
+}
+
+/* Expanded Content Styling */
+.expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin: 1rem 0;
+}
+
+.expanded-content.active {
+  max-height: 2000px; /* Adjust based on content */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.full-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.gift-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Match activities carousel height */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin: 2rem 0;
+}
+
+.gift-carousel .carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gift-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Match activities page arrow styling */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.carousel-arrow.prev { left: 1rem; }
+.carousel-arrow.next { right: 1rem; }
+
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.category-list li {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .gift-carousel img {
+      height: 300px;
+  }
+}
+
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(11, 24, 52, 0.8);
+  color: white;
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+  color: #0b1834;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+/* Adjust carousel height */
+.carousel-container {
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+      height: 400px;
+  }
+  
+  .carousel-caption {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+  }
+  
+  .section-title {
+      font-size: 2rem;
+  }
+}
+
