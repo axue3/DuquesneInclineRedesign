@@ -9,7 +9,7 @@ $(document).ready(function() {
     
     track.css("transform", `translateX(-${index * 100}%)`);
     
-    // Reset to first image (with clone) seamlessly
+
     if (index >= images.length) {
       setTimeout(() => {
         track.css("transition", "none");
@@ -27,6 +27,5 @@ $(document).ready(function() {
     });
   });
 
-  // Start automatic sliding
   setInterval(slideNext, slideDuration);
 });

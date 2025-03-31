@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
 }
 
-/* Full-width navigation bar without gaps */
+
 .top-nav {
   background: #0b1834;
   padding: 15px 0;
@@ -36,7 +36,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Full-bleed carousel */
 .hero-carousel {
   position: relative;
   width: 100vw;
@@ -59,7 +58,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Hero text styling matching screenshot */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -92,7 +90,6 @@ body {
   margin-right: auto;
 }
 
-/* Content section styling */
 .content {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -101,7 +98,6 @@ body {
   line-height: 1.6;
 }
 
-/* Footer styling */
 footer {
   background: #0b1834;
   color: white;
@@ -112,7 +108,7 @@ footer {
 
 
 .read-more {
-  background-color: #0b1834; /* Navy blue from your nav */
+  background-color: #0b1834;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -128,15 +124,15 @@ footer {
 }
 
 .read-more:hover {
-  background-color: #1a2d4f; /* Darker navy */
+  background-color: #1a2d4f;
   transform: translateY(-2px);
 }
 
 .read-more.active {
-  background-color: #2a4365; /* Active state color */
+  background-color: #2a4365;
 }
 
-/* Expanded Content Styling */
+
 .expanded-content {
   max-height: 0;
   overflow: hidden;
@@ -145,12 +141,12 @@ footer {
 }
 
 .expanded-content.active {
-  max-height: 2000px; /* Adjust based on content */
+  max-height: 2000px;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   margin: 2rem 0;
   border-radius: 8px;
@@ -179,7 +175,7 @@ footer {
 .gift-carousel {
   position: relative;
   width: 100%;
-  height: 500px; /* Match activities carousel height */
+  height: 500px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -199,7 +195,6 @@ footer {
   flex-shrink: 0;
 }
 
-/* Match activities page arrow styling */
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -268,7 +263,6 @@ footer {
   font-size: 2.5rem;
 }
 
-/* Adjust carousel height */
 .carousel-container {
   height: 600px;
 }

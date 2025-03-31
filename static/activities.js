@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       updateCarousel();
     });
   
-    // Initialize first image
+
     images[0].classList.add('active');
   });
